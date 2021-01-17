@@ -5,7 +5,7 @@
 
 body {
     background-color:rgb(230, 230, 230);
-    background-image: url("/src/img/marble.jpg");
+    background-image: url("/coutinhos/src/img/marble.jpg");
     margin: 0px;
 
     scroll-behavior: smooth;
