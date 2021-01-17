@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Eutemia";
+    src: url("/src/fonts/Eutemia.woff");
+}
+
+body {
+    background-color:rgb(230, 230, 230);
+    background-image: url("/src/img/marble.jpg");
+    margin: 0px;
+
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Text over img*/
+.text_over_image {
+    background-image: url("/src/img/intro.jpg");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+div.text_over_image:hover{
+    filter: sepia(0.5);
+    filter: grayscale(0.25);
+    filter: saturate(0.25);
+}
+
+.text_over_image h1 {
+    color: rgb(0, 0, 0); 
+    background-color: rgba(196, 196, 196, 0.5); 
+    border: 2px solid rgb(235, 235, 235);
+    
+    font-family: Eutemia;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    
+    padding: 40px 20px 20px 20px;
+    margin: 15% 25%;    
+}
+.text_over_image a { color: black;}
+
+.text_over_image a:hover {color: firebrick;}
+
+
+.menu_bar {
+    font-family: Eutemia;
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.main_container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+    max-width: 75%;
+    margin: auto;
+}
+
+/*flex ( flex: 1 0 40%;) 1 sao tamanhos iguais , 0 nao encolher , 40% do tamanho inicial do container*/
+.dishes_button {
+    background-color: rgb(223, 207, 71);
+    flex-basis: 400px;
+    border: 3px solid rgb(255, 255, 255);
+
+    margin: 0px 10px 20px 20px;
+    height: 230px;
+    max-height: 230px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_over_img_container {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    text-align: center;
+}
+
+.text_over_img_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+.houver_button {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.houver_button:hover {
+    opacity: 1;
+}
+
+.houver_button h1, h2, h3, h4, h5, h6 {
+    font-size: 200%;
+    
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -90%);
+}
+
+/*fixed button to index*/ 
+
+.fixed_button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    max-width: 50px;
+    max-height: 40px;
+}
+.fixed_button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
